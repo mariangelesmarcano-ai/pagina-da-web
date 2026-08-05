@@ -39,27 +39,24 @@
             <p>Por: Mariangeles</p>
             <p>Nesse blog vamos ver vários tipos de arte, bem como: conselhos, onde encontar sites de inspiração para seus desenhos, tipos de materiais de desenho
             (sendo comuns ou não). Esse blog não é apenas sobre desenho, mas também uma introducão a meu mundo artístico. Continue acessando para acompanhar essa jornada comigo!</p>
-        
-            <h2>Meu segundo Post</h2>
-            <p>Por: Mariangeles</p>
-            <p></p>
             <button>❤️<span>0</span></button>
-        <button>👍<span>0</span></button>
+            <button>👍<span>0</span></button>
             </div>
         
         </main>
     </body>
     <script>
-    botoes.forEach(function (botao) {
-let curtiu = false;
+        const botoes = document.querySelectorAll("button");
 
-botao.addEventListener("click", botaoClicado);
 
-function botaoClicado() {
-console.log("fui clicado");
-let texto = botao.querySelector("span");
-texto.textContent++;
-}
+        botoes.forEach(function(botao) {
+    botao.addEventListener("click", botaoClicado);
+    function botaoClicado() {
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
 });
+
     </script>
 </html>
